@@ -26,6 +26,14 @@ const routes = [
                 },
                 component: () => import("../view/BaseSwitch.vue"),
             },
+            {
+                path: "/EchartMaps",
+                name: "EchartMaps",
+                meta: {
+                    title: "EchartMaps",
+                },
+                component: () => import("../view/EchartMaps.vue"),
+            },
         ],
     },
     {
