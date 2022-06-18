@@ -4,7 +4,7 @@
 
 <script>
 import * as echarts from "echarts";
-import chinaJson from "../assets/json/chinaJson.json";
+import chinaJson from "../assets/json/china.json";
 
 export default {
   data() {
@@ -62,11 +62,11 @@ export default {
         { name: "澳门特别行政区", value: 77 },
       ];
       console.log(chinaJson);
-      echarts.registerMap("chinaMap", chinaJson);
+      echarts.registerMap("china", chinaJson);
       let option = {
         geo: {
           type: "map",
-          map: "chinaMap", //chinaMap需要和registerMap中的第一个参数保持一致
+          map: "china", //chinaMap需要和registerMap中的第一个参数保持一致
           roam: false, // 设置允许缩放以及拖动的效果
           label: {
             show: true, //展示标签

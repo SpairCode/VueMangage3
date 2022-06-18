@@ -6,9 +6,10 @@
       <Tag />
       <router-view v-slot="{ Component }">
         <transition name="move">
-          <keep-alive>
-            <component :title="Component" :is="Component" />
-          </keep-alive>
+          <!-- 是否缓存组件 -->
+          <!-- <keep-alive> -->
+          <component :title="Component" :is="Component" />
+          <!-- </keep-alive> -->
         </transition>
       </router-view>
     </div>
